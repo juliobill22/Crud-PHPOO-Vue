@@ -1,0 +1,27 @@
+﻿CREATE SCHEMA `pessoadb` ;
+
+CREATE TABLE `pessoadb`.`pessoa` (
+  `idpessoa` int(15) NOT NULL,
+  `nome` varchar(45) NOT NULL,
+  `idade` int NOT NULL,
+  PRIMARY KEY (`idpessoa`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+
+ALTER TABLE `pessoadb`.`pessoa` 
+AUTO_INCREMENT = 1 ,
+CHANGE COLUMN `idpessoa` `idpessoa` INT(15) NOT NULL ,
+ADD UNIQUE INDEX `idpessoa_UNIQUE` (`idpessoa` ASC);
+;
+
+ALTER TABLE `pessoadb`.`pessoa` 
+CHANGE COLUMN `idpessoa` `idpessoa` INT(15) NOT NULL AUTO_INCREMENT ;
+
+INSERT INTO `pessoadb`.`pessoa` (`idpessoa`, `nome`, `idade`) VALUES ('1', 'Proverbios 26:15-17', '26');
+INSERT INTO `pessoadb`.`pessoa` (`idpessoa`, `nome`, `idade`) VALUES ('2', 'Maria', '82');
+INSERT INTO `pessoadb`.`pessoa` (`idpessoa`, `nome`, `idade`) VALUES ('3', 'Lucas', '32');
+INSERT INTO `pessoadb`.`pessoa` (`idpessoa`, `nome`, `idade`) VALUES ('4', 'Matheus', '35');
+INSERT INTO `pessoadb`.`pessoa` (`idpessoa`, `nome`, `idade`) VALUES ('5', 'Marcos', '45');
+INSERT INTO `pessoadb`.`pessoa` (`idpessoa`, `nome`, `idade`) VALUES ('6', 'José', '80');
+INSERT INTO `pessoadb`.`pessoa` (`idpessoa`, `nome`, `idade`) VALUES ('7', 'Lúcia', '28');
+INSERT INTO `pessoadb`.`pessoa` (`idpessoa`, `nome`, `idade`) VALUES ('7', 'Samanta', '12');
